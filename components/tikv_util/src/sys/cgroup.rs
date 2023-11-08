@@ -173,7 +173,7 @@ fn is_cgroup2_unified_mode() -> Result<bool, String> {
         }
         buffer.assume_init().f_type
     };
-    Ok(f_type == libc::CGROUP2_SUPER_MAGIC)
+    Ok(f_type as u64 == libc::CGROUP2_SUPER_MAGIC as u64)
 }
 
 // From cgroup spec:

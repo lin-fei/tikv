@@ -2500,15 +2500,13 @@ dependencies = [
 [[package]]
 name = "grpcio-sys"
 version = "0.10.3+1.44.0-patched"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f23adc509a3c4dea990e0ab8d2add4a65389ee69c288b7851d75dd1df7a6d6c6"
+source = "git+https://github.com/xhebox/grpc-rs?branch=rv64#9d571ff0a54f767afe76686cd8d176e5b4fbf0df"
 dependencies = [
  "bindgen 0.59.2",
  "cc",
  "cmake",
  "libc 0.2.146",
  "libz-sys",
- "openssl-sys",
  "pkg-config",
  "walkdir",
 ]
@@ -3108,7 +3106,7 @@ dependencies = [
 [[package]]
 name = "librocksdb_sys"
 version = "0.1.0"
-source = "git+https://github.com/tikv/rust-rocksdb.git#fc38a5b427e6c9b351f835c641e2ee95b8ff8306"
+source = "git+https://github.com/xhebox/rust-rocksdb?branch=rv64#e03bff3c5885b8d3e1f4c9f784a59b6c53c98e89"
 dependencies = [
  "bindgen 0.65.1",
  "bzip2-sys",
@@ -3127,7 +3125,7 @@ dependencies = [
 [[package]]
 name = "libtitan_sys"
 version = "0.0.1"
-source = "git+https://github.com/tikv/rust-rocksdb.git#fc38a5b427e6c9b351f835c641e2ee95b8ff8306"
+source = "git+https://github.com/xhebox/rust-rocksdb?branch=rv64#e03bff3c5885b8d3e1f4c9f784a59b6c53c98e89"
 dependencies = [
  "bzip2-sys",
  "cc",
@@ -5086,8 +5084,7 @@ dependencies = [
 [[package]]
 name = "ring"
 version = "0.16.16"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b72b84d47e8ec5a4f2872e8262b8f8256c5be1c938a7d6d3a867a3ba8f722f74"
+source = "git+https://github.com/xhebox/ring?branch=rv64#61021b3ad40c27b94d1af5e4d230f680f14d9d64"
 dependencies = [
  "cc",
  "libc 0.2.146",
@@ -5101,7 +5098,7 @@ dependencies = [
 [[package]]
 name = "rocksdb"
 version = "0.3.0"
-source = "git+https://github.com/tikv/rust-rocksdb.git#fc38a5b427e6c9b351f835c641e2ee95b8ff8306"
+source = "git+https://github.com/xhebox/rust-rocksdb?branch=rv64#e03bff3c5885b8d3e1f4c9f784a59b6c53c98e89"
 dependencies = [
  "libc 0.2.146",
  "librocksdb_sys",
